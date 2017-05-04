@@ -33,8 +33,8 @@ class AdminPortalAutoTest(unittest.TestCase):
         # create a new Firefox session
         self.driver = webdriver.Chrome("C:\Python36x64\WebDrivers\chromedriver.exe")
         self.driver.implicitly_wait(5)
-        #self.driver.maximize_window()
-        #self.driver.get("http://zpn-rng08/admin/#/welcome")
+        self.driver.maximize_window()
+        self.driver.get("http://zpn-rng08/admin/#/welcome")
 
     def test_1_TC10517_Metrics_Telemetry_Section_Admin_Portal(self):
         self.driver.get("http://zpn-rng08/admin/#/welcome")
